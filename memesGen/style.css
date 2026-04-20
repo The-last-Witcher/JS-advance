@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background-color: bisque;
+}
+
+body header{
+    background-color: antiquewhite;
+    padding: 12px;
+}
+
+body header h1{
+    margin: 0;
+    color: darkgoldenrod;
+}
+
+body main{
+    padding-inline: 30px;
+}
+
+body main button{
+    display: block;
+
+    background-color: darkred;
+    color: aliceblue;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+body main section{
+    display: flex;
+    flex-direction: column;
+
+    float: right;
+}
+
+body main section img{
+    width: 100%;
+    max-width: 350px;
+}
+
+.loader{
+    border: 8px solid #0f68b1;
+    border-top: 8px solid #34db4a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
