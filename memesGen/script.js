@@ -1,5 +1,13 @@
 async function getMemes(){
-    const res = await fetch('https://api.imgflip.com/get_memes')
+    const res = await fetch('https://api.imgflip.com/get_memes', {
+        method: 'GET',
+        mode: "cors",
+        // cache: 'no-cache',
+        // headers: {
+        //     "Content-Type": "application/json"
+        // },
+        // credentials: 'include' // для передачи учетных данных
+    })
     return await res.json()
 }
 
